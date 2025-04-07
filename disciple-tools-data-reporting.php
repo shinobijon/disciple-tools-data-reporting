@@ -87,6 +87,8 @@ class DT_Data_Reporting {
             require_once( 'includes/admin/admin-menu-and-tabs.php' );
         }
 
+            require_once( plugin_dir_path( __FILE__ ) . 'includes/providers/aws-elk.php' );
+      
             $this->i18n();
 
         if ( is_admin() ) { // adds links to the plugin description area in the plugin admin list.
